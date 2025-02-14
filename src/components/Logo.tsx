@@ -1,11 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import { string } from 'yup'
+// import { string } from 'yup'
 
-interface LogoProps { 
-className? : string;
-}
-const Logo = ( {className = ""}: LogoProps ) => {
+
+const Logo = ( {className = ""} ) => {
   return (
     <>
     <Link href='/'>

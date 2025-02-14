@@ -1,6 +1,5 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
-import Image from "next/image";
 import { motion } from "motion/react";
 
 export default function ThreeTabs() {

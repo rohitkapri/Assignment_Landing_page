@@ -3,7 +3,7 @@ import {Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { useEffect, useState } from "react";
+// import {  useState } from "react";
 import Image from "next/image";
 import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
 
@@ -46,7 +46,8 @@ const testimonials = [
 ];
 
 const TestimonialSlider = () => {
-  const [slidesPerView, setSlidesPerView] = useState(1);
+  // const [slidesPerView, setSlidesPerView] = useState(1);
+  const slidesPerView : number  = 1;
  
 
   return (

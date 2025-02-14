@@ -41,17 +41,17 @@ const Contact = () => {
     });
 
     const validateField = async (name: string, value: string) => {
-      try {
-          const fieldSchema = yup.reach(validationSchema, name) as yup.Schema<any>; 
-          await fieldSchema.validate(value); 
-          setErrors((prev) => ({ ...prev, [name]: "" }));
-      } catch (error) {
-          setErrors((prev) => ({
-              ...prev,
-              [name]: (error as yup.ValidationError).message,
-          }));
-      }
-  };
+    try {
+        const fieldSchema = yup.reach(validationSchema, name) as yup.Schema<string>;  
+        await fieldSchema.validate(value); 
+        setErrors((prev) => ({ ...prev, [name]: "" }));
+    } catch (error) {
+        setErrors((prev) => ({
+            ...prev,
+            [name]: (error as yup.ValidationError).message,
+        }));
+    }
+};
   
 
 

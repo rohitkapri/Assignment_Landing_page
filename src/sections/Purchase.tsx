@@ -4,10 +4,8 @@ import React from "react";
 import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
 import Image from "next/image";
 
-interface PurchaseProps {
-  className?: string;
-}
-const Purchase = ({ className = "" }: PurchaseProps) => {
+
+const Purchase = () => {
   return (
     <>
       <section className="py-10 px-5 md:px-20 md:mb-40 mb-20 lg:mb-20 flex flex-col gap-10 relative border max-h-[724px]">

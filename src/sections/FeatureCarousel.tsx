@@ -3,7 +3,6 @@ import { Navigation } from "swiper/modules";
 import { useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Button } from "@/components/ui/button";
 import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
 import Image from "next/image";
 
